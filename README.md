@@ -45,13 +45,22 @@ Please list two areas of the assignment you'd like to **discuss further with you
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
+
+
 Signing up for Instagram:
+
 <img src='https://i.imgur.com/UnofRKP.gif' title='Video Walkthrough of Sign Up' width='' alt='Video Walkthrough of Sign Up' />
+
+
 Accessing detail views:
+
 <img src='https://i.imgur.com/8wjSmcf.gif' title='Video Walkthrough of Detail Views' width='' alt='Video Walkthrough of Detail Views' />
 
 Infinite Scroll:
+
 <img src='https://i.imgur.com/DNepDNc.gif' title='Video Walkthrough of Infinite Scroll' width='' alt='Video Walkthrough of Infinite Scroll' />
+
+
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -60,7 +69,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 List an 3rd party libraries, icons, graphics, or other assets you used in your app.
 
 - [AFNetworking](https://github.com/AFNetworking/AFNetworking) - networking task library
-- [Parse]
+- Parse
 
 
 ## Notes
