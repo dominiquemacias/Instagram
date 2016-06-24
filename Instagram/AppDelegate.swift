@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Parse
+import ParseUI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +18,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Parse.initializeWithConfiguration(
+            ParseClientConfiguration(block: { (configuration:ParseMutableClientConfiguration) -> Void in
+                configuration.applicationId = "Instagram"
+                configuration.clientKey = "aregojaejknrgjar"  // set to nil assuming you have not set clientKey
+                configuration.server = "https://blooming-reef-49398.herokuapp.com/parse"
+            })
+        
+//            window = UIWindow(frame: UIScreen.mainScreen().bounds)
+//              
+       
+
+        )
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        // check if user is logged in.
+        if PFUser.currentUser() != nil {
+            // if there is a logged in user then load the home view controller
+            let TabBarController = storyboard.instantiateViewControllerWithIdentifier("MainTabBarController") as! UITabBarController
+            window?.rootViewController = TabBarController
+        }
+        
         return true
     }
 
